@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookTicket</title>
+<link rel="shortcut icon" href="./images/logo4.png" type="image/x-icon">
+<link rel="stylesheet"
+	href="./font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-image: url('./images/2.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	margin: 0;
+}
+
+h1 {
+	font-size: 1.6em;
+	color: #ebe3e3;
+	text-shadow: 2px 5px 5px rgba(0, 0, 0);
+	font-weight: 500;
+	display: inline-block;
+}
+
+.booking-form {
+	background: rgba(255, 255, 255, 0.9);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	width: 350px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 8%;
+}
+
+.booking-form img {
+	max-width: 100px;
+	margin-bottom: 20px;
+}
+
+.booking-form h2 {
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: #333;
+}
+
+.form-group {
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.form-group label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.form-group select, .form-group input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+/* Style for the journey type section */
+.journey-type {
+	margin-top: 15px;
+	text-align: left;
+}
+
+.journey-type label {
+	margin-right: 30px;
+	font-weight: bold;
+}
+
+.journey-type input[type="radio"] {
+	margin: 10px 3px 5px 0px;
+	accent-color: #cf6464; /* Sets the color of the radio button to match the button color */
+}
+
+button {
+	width: 49%;
+	padding: 10px;
+	background: #cf6464;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+	margin-top: 30px;
+}
+
+button:hover {
+	background: #963a3a;
+}
+
+img {
+	width: 53px;
+	height: 53px;
+	margin: 25px 8px -15px 90px;
+}
+</style>
+</head>
+
+<body>
+	<img src="./images/logo4.png">
+	<h1>
+		Book<i class="fa fa-check" aria-hidden="true"
+			style="color: #cf6464; font-size: 1.7em;"></i>et
+	</h1>
+
+	<div class="booking-form">
+		<h2>Book Your Train Ticket</h2>
+		<form action="fare" method="post">
+			<div class="form-group">
+				<label for="from">From:</label> <select id="from" name="from"
+					required>
+					<option value="" disabled selected>Select a station</option>
+					<option value="Borivali">Borivali</option>
+					<option value="Churchgate">Churchgate</option>
+					<option value="Bandra">Bandra</option>
+					<option value="Dadar">Dadar</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="to">To:</label> <select id="to" name="to" required>
+					<option value="" disabled selected>Select a station</option>
+					<option value="Virar">Virar</option>
+					<option value="Nalasopara">Nalasopara</option>
+					<option value="Bhayandar">Bhayandar</option>
+					<option value="Vasai">Vasai</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="passengers">Number of Passengers:</label> <input
+					type="number" id="passengers" name="passengers" min="1" max="10"
+					required>
+			</div>
+			<div class="journey-type">
+				<label for="journeyType">Journey Type:</label><br> <input
+					type="radio" id="oneWay" name="journeyType" value="OneWay" required>
+				<label for="oneWay" style="font-weight: 300;">One Way</label> <input
+					type="radio" id="return" name="journeyType" value="Return" required>
+				<label for="return" style="font-weight: 300;">Return</label>
+			</div>
+			<button type="submit">Get Fare</button>
+			<button type="button" onclick="login()">Book</button>
+		</form>
+	</div>
+	<script>
+		function login() {
+			window.location.href = "login.html";
+		}
+	</script>
+</body>
+
+</html>
