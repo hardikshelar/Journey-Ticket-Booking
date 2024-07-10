@@ -26,25 +26,25 @@ The Journey Ticket Booking System is a web application designed to facilitate th
 - PostgreSQL Database
 - Maven
 ## Project structure
-journey-ticket-booking/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   ├── com/
-│   │   │   │   └── jspid/
-│   │   │   │       ├── controller/
-│   │   │   │       ├── model/
-│   │   │   │       ├── utility/
-│   │   │   │       
-│   │   │   │       
-│   │   ├── resources/
-│   │   │   └── META-INF/
-│   │   ├── webapp/
-│   │   │   ├── WEB-INF/
-│   │   │   │   ├── web.xml
-│   │   │   └── index.jsp
-├── pom.xml
-└── README.md
+- journey-ticket-booking/
+- ├── src/
+- │   ├── main/
+- │   │   ├── java/
+- │   │   │   ├── com/
+- │   │   │   │   └── jspid/
+- │   │   │   │       ├── controller/
+- │   │   │   │       ├── model/
+- │   │   │   │       ├── utility/
+- │   │   │   │       
+- │   │   │   │       
+- │   │   ├── resources/
+- │   │   │   └── META-INF/
+- │   │   ├── webapp/
+- │   │   │   ├── WEB-INF/
+- │   │   │   │   ├── web.xml
+- │   │   │   └── index.jsp
+- ├── pom.xml
+- └── README.md
 
 ## Below are Some Snapshots of the Web Application
 ![image](https://github.com/hardikshelar/Journey-Ticket-Booking/assets/90783840/1413afc2-a74a-442c-9cee-28b0078c3922)
