@@ -25,5 +25,7 @@ JDK 8 or higher
 Apache Tomcat 9.0 or higher
 PostgreSQL Database
 Maven
+
+Below are Some Snapshots of the Web Application
 ![image](https://github.com/hardikshelar/Journey-Ticket-Booking/assets/90783840/1413afc2-a74a-442c-9cee-28b0078c3922)
 
